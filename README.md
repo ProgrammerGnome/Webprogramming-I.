@@ -1,1 +1,2 @@
-# Webprogramozas-I.-KOTELEZO
+# Webprogramming I.
+Please uncompress assets directory!
