@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+<head>
+<title>ProgrammerGnome's website</title>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="screen-2.css" media="screen" title="Gila (screen)" />
+</head>
+<body>
+<!-- For non-visual user agents: -->
+<div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+<!-- ##### Header ##### -->
+<div id="header">
+  <h1 class="headerTitle"> <center><a href="#">Programmer<span>Gnome</span></a><center> </h1>
+  <div class="subHeader"> <span class="doNotDisplay">Navigation: </span> Mindennapi alkalmazások :) </div>
+</div>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- ##### Main Copy ##### -->
+<div id="main-copy">
+  <h1 id="introduction" style="border-top: none; padding-top: 0;">Rövid ismertető és a szükséges előismeretek</h1>
+  <p>Középiskola. Azon felül nem igényel különösebb matematikai előismeretet.</p>
+  <h1 id="cross-browser" style="border-top: none; padding-top: 0;">A feladat</h1>
+  <p> Egy iskola becsengetési rendje az alábbi ábrán látható.
+Írjunk fel egy-egy képletet a becsengetésre és a kicsengetésre az alábbiak szerint. Legyen x a tanóra sorszáma, majd a képletekbe való behelyettesítéssel egy-egy olyan 3 vagy 4 jegyű számot kapjunk melyeket jobbról balra olvasva, az első két számjegyük a percet, a maradék számjegyeik pedig az órát mutatják. Továbbá igazoljuk a képletek helyességét az első 6 tanórára, az összes behelyettesítése nélkül. </p>
+ <p><center><img src="CikKEP/tablazat_csengo.jpg" alt="Italian Trulli"></center></p>
+  <h1 id="cross-browser" style="border-top: none; padding-top: 0;">Megoldás</h1>
+  <p>
+    Látható, hogy ha a tanóra száma x, akkor a becsengetések óra időpontja és n között, x+6 az összefüggés. Továbbá ezt még meg kell szorozni 100-zal, hogy megmaradjon két helyiérték a perceknek, majd hozzáadunk 50-et, mivel a becsengetés percei 50-ről indulnak. Ebből kivonunk 5x+5-t, mivel -5(x-5) alakra hozva, láthatjuk a csengetés 5 percenkénti csökkenését a tanóra növekedésének függvényében (fordított arány). Tehát a képleteket fel is írtuk, így néznének ki:
+
+$$ Becsengetesre: x_{b} =95*x+655 $$
+$$ Kicsengetesre: x_{k} =95*x+740 $$
+
+Ezen igazolására a teljes indukcióra lesz szükségünk. Első lépésként tegyük fel, hogy az 1. tanórára teljesül:
+
+$$ 1 =95*1+655=750, Pipa! $$
+
+Most ebből következésképp k-ra felírva:
+
+$$ k_{b}+1=95*(k_{b}+1)+655 $$
+
+Az indukciós feltevésünk, hogy k-ról az állítás öröklődik-e k+1-re:
+
+$$ k_{b}+1=95*k_{b}+655+95 $$
+
+Alakítások után a következőt kapjuk:
+
+$$ k_{b}=95*k_{b}+655 $$
+
+...ami eleget is tesz az indukciós feltevésnek, mert az óra számához 1 órát hozzáadva a következő óra becsengetését kapjuk.
+Ugyanígy igazolhatjuk a kicsnengetésekre felírt a formulánkat.
+  </p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+
+
+<!-- ##### Footer ##### -->
+<div id="footer">
+  <div class="doNotPrint">
+  <div> Copyright &copy; 2023, ProgrammerGome's website <br>
+    Modified on 2023-02-05 by Márk Király</div>
+</div>
+</body>
+</html>

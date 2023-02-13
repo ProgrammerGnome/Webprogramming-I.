@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+<head>
+<title>ProgrammerGnome's website</title>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="screen-2.css" media="screen" title="Gila (screen)" />
+</head>
+<body>
+<!-- For non-visual user agents: -->
+<div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+<!-- ##### Header ##### -->
+<div id="header">
+  <h1 class="headerTitle"> <center><a href="#">Programmer<span>Gnome</span></a><center> </h1>
+  <div class="subHeader"> <span class="doNotDisplay">Navigation: </span> A Discord feladat </div>
+</div>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- ##### Main Copy ##### -->
+<div id="main-copy">
+  <h1 id="introduction" style="border-top: none; padding-top: 0;">Rövid ismertető és a szükséges előismeretek</h1>
+  <p>Középiskola. Azon felül nem igényel különösebb matematikai előismeretet.</p>
+  <h1 id="cross-browser" style="border-top: none; padding-top: 0;">A feladat</h1>
+  <p> Az alábbi képen a discord nevű alkalmazás (egyik) szervercsatornájának lassított mód beállítása látható.
+Az időintervallumok számát túl kevésnek találtuk, szeretnénk kevesebb vagy több időintervallumon korlátozni a tagok üzenetküldéseit, mindezt úgy, hogy az időintervallumok rendezettsége is megmaradjon. A szabály felismerése után írjuk fel az n-edik időintervallumot tetszés szerinti mértékegységben, és bizonyítsuk a helyességét. </p>
+ <p><center><img src="CikKEP/discord" alt="Italian Trulli"></center></p>
+  <h1 id="cross-browser" style="border-top: none; padding-top: 0;">Megoldás</h1>
+  <p>Nos ennek a feladatnak elég körülményes a megoldása. :(
+A képen látható időintervallumokat percre átváltva egy egész pontosan 2,16... darab sorozatot kapunk. Ezek a következők:
+És a 360 az meg a 3. sorunk kezdőszáma lenne.
+Megfigyelendő, hogy az első sor összegének utolsó tagjának felét kell a sorozat jobb oldalához hozzáadni, hogy megkapjuk a következő sorozat első tagját. A következő sorozat utolsó összegéhez már a sorozat utolsó tagját kell hozzáadni, és így tovább...
+
+$$ 0,083...+0,16...+0,25+0,5+1+2=4 $$
+$$ 5+10+15+30+60+120=240 $$
+
+Ez azt jelenti, hogy a sorozatok sorozatára is fel kell írni egy összefüggést. Kezdjünk hát ezzel: Legyen x a sorozatok sorozatának száma, ekkor:
+
+$$ elso-formula = 2^{x}*6*n $$
+
+képlet megadja a sorozatok közti kezdőérték különbséget az x.-edik sorozat első n eleme függvényében. Most akkor végre áttérhetünk a rendes sorozatok szabályának felírására. Ez így nézne ki:
+
+$$ 2^{k-3}*3*n+...+2^{k-3}*3*n=2*(2^{k-3}*3*n), ha: k\geq 3 $$
+
+Az általános érvényű összefüggés, hogy az első két tag kivételével, minden tag kétszerese az előtte álló tagnak és kettő hatványszorosa az első tagnak. A szabály pedig úgy adódott, hogy a megfigyelésünk a fősorozat első három tagjára nem érvényes, mivel a harmadik tag nem 2 hatványaszorosa az első tagnak. Így már ki is derűlt, hogy a 2 a k-3 -on mit jelent, a 3n-es szorzó pedig a 2. és 3. tag szabálytalanságát kompenzálja. Bizonyítása teljes indukcióval:
+
+$$ 2^{(k+1)-3}*3*(n+1)=2*(2^{(k+1)-3}*3*(n+1)), ha: k\geq 3 $$
+
+...egyértelmű, hisz a 7. tag tényleg 2-szerese az előzőnek. Összefoglalva tehát, az első tag ismeretében az "elso-formula"-ba behelyettesítve megkapjuk a következő sorozat kezdőértékét. A másik összefüggésbe behelyettesítve pedig a konkrét időintervallumot kapjuk meg percben.
+<br><br>Utóírat: Nekem így sikerült, ha valakinek van jobb ötlete, azt szívesen olvasnám a Fórumon.</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+
+
+<!-- ##### Footer ##### -->
+<div id="footer">
+  <div class="doNotPrint">
+  <div> Copyright &copy; 2023, ProgrammerGome's website <br>
+    Modified on 2023-02-05 by Márk Király</div>
+</div>
+</body>
+</html>
