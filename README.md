@@ -1,2 +1,2 @@
 # Webprogramming I.
-## [Készítés alatt álló portfólió...](https://ProgrammerGnome.github.io)
+## [Készítés alatt álló portfólió...](https://programmergnome.github.io/Webprogramming-I./)
