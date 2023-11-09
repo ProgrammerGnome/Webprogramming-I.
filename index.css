@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700'); /* Általános stílusok */
+
+/* Navigációs cucc */
+.navbar {
+    margin-right: 25%;
+    margin-left: 30%;
+}
+
+/* Oldalsávok */
+.col-md-3 {
+    background-color: white;
+}
+
+.container {
+    background-color: whitesmoke;
+}
+
+/* Köszöntő animáció */
+p {
+    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+}
+
+.container-header {
+    font-family: Roboto, serif;
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    width: 90%;
+    margin-left: auto;
+    margin-right: 5%;
+    height: 8vh;
+}
+
+.animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.animation > div > div {
+    padding: 0.75rem 0.75rem;
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 10s infinite;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: -5px;
+    }
+    10% {
+        margin-top: -5px;
+    }
+    20% {
+        margin-top: -5rem;
+    }
+    60% {
+        margin-top: -5rem;
+    }
+    70% {
+        margin-top: -10rem;
+    }
+    80% {
+        margin-top: -10rem;
+    }
+    90% {
+        margin-top: -5px;
+    }
+    100% {
+        margin-top: -5px;
+    }
+}
+
+.card {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Footer */
+#footer {
+    color: black;
+    background-color: rgb(230, 223, 207);
+    font-size: 92%;
+    text-align: center;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 1em 4mm;
+    clear: both;
+}
+
+#footer a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
