@@ -2,17 +2,37 @@
 
 /* Navigációs cucc */
 .navbar {
+    /*
+    margin-left: 27%;
     margin-right: 25%;
-    margin-left: 30%;
+    */
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Oldalsávok */
 .col-md-3 {
     background-color: white;
+    height: fit-content;
 }
 
-.container {
-    background-color: whitesmoke;
+.container-stack {
+    background-image: url("images/oldMonitor.png");
+    width: 100%;
+    height: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.container-docs {
+    background-color: lightcyan;
+    padding-bottom: 2%;
+}
+
+.lorem {
+    color: white;
 }
 
 /* Köszöntő animáció */
@@ -28,7 +48,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: midnightblue;
     width: 90%;
     margin-left: auto;
     margin-right: 5%;
@@ -36,9 +57,9 @@ p {
 }
 
 .animation {
-    height: 50px;
+    height: 75%;
     overflow: hidden;
-    margin-left: 1rem;
+    margin-left: 0rem;
 }
 
 .animation > div > div {
@@ -54,10 +75,10 @@ p {
 
 @keyframes text-animation {
     0% {
-        margin-top: -5px;
+        margin-top: -1%;
     }
     10% {
-        margin-top: -5px;
+        margin-top: -1%;
     }
     20% {
         margin-top: -5rem;
@@ -72,16 +93,43 @@ p {
         margin-top: -10rem;
     }
     90% {
-        margin-top: -5px;
+        margin-top: -1%;
     }
     100% {
-        margin-top: -5px;
+        margin-top: -1%;
     }
 }
 
 .card {
+    /*
     margin-left: 10%;
     margin-right: 10%;
+    */
+    background-image: url("images/keyboard.jpg");
+    background-color: #5a6268;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-oktatas {
+    background-image: url("images/educ.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.ujszin {
+    background-color: white;
+    text-align: center;
+}
+
+.list-group-item {
+    width: 75%;
+}
+
+.yt-container {
+    /*background-color: red;*/
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 /* Footer */
@@ -105,3 +153,39 @@ p {
 #footer a:hover {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+.file-accordion {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.file-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.file-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.file-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.file-content {
+    display: none;
+    padding: 10px;
+}
+
