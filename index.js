@@ -18,7 +18,7 @@ function toggleAccordion_v2(fileNumber) {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Szövegek, amiket felváltva szeretnénk gépelni
-    const textsToType = ["PROGRAMMER GNOME", "BACKEND DEVELOPER", "BASED ARCH LINUX ENJOYER”"];
+    const textsToType = ["PROGRAMMER GNOME", "BACKEND DEVELOPER", "BASED ARCH LINUX ENJOYER"];
 
     // Időzítő, hogy megvárja a CSS animáció végezze el a gépelő hatást
     setTimeout(() => {
