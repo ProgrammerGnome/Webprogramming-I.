@@ -7,6 +7,10 @@ function toggleAccordion(fileNumber) {
     fileContent.style.display = (fileContent.style.display === 'block') ? 'none' : 'block';
 }
 
+function toggleAccordion_v2(fileNumber) {
+    const fileContent = document.querySelector(`.file-item_v2:nth-child(${fileNumber}) .file-content_v2`);
+    fileContent.style.display = (fileContent.style.display === 'block') ? 'none' : 'block';
+}
 
 /**
  * Üdvözlő szöveg
@@ -51,3 +55,61 @@ function startTyping(texts) {
 
     type();
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const galleries = [
+        {
+            containerId: 'gallery',
+            modalId: 'modal',
+            modalImageId: 'modalImage',
+            prefix: "/images/my_photos/",
+            images: ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg']
+        },
+        {
+            containerId: 'gallery2',
+            modalId: 'modal2',
+            modalImageId: 'modalImage2',
+            prefix: "/images/my_photos/",
+            images: ['img_v_1.jpg', 'img_v_4.jpg', 'img_v_3.jpg', 'img_v_2.jpg']
+        }
+        // Add more galleries as needed
+    ];
+
+    galleries.forEach(gallery => setupGallery(gallery));
+
+    function setupGallery({containerId, modalId, modalImageId, prefix, images}) {
+        const galleryContainer = document.getElementById(containerId);
+        const modal = document.getElementById(modalId);
+        const modalImage = document.getElementById(modalImageId);
+
+        images.forEach((image) => {
+            const path = `${prefix}${image}`;
+            const img = createImageElement(path);
+            img.addEventListener('click', () => openModal(path, modal, modalImage));
+            galleryContainer.appendChild(img);
+        });
+
+        modal.onclick = function (event) {
+            if (event.target === modal) {
+                closeModal(modal);
+            }
+        };
+    }
+
+    function createImageElement(path) {
+        const img = document.createElement('img');
+        img.src = path;
+        img.alt = 'Gallery Image';
+        return img;
+    }
+
+    function openModal(path, modal, modalImage) {
+        modal.style.display = 'block';
+        modalImage.src = path;
+    }
+
+    function closeModal(modal) {
+        modal.style.display = 'none';
+    }
+});
