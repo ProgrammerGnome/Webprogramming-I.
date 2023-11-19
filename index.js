@@ -63,14 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
             containerId: 'gallery',
             modalId: 'modal',
             modalImageId: 'modalImage',
-            prefix: "/images/my_photos/",
+            prefix: "images/my_photos/",
             images: ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg']
         },
         {
             containerId: 'gallery2',
             modalId: 'modal2',
             modalImageId: 'modalImage2',
-            prefix: "/images/my_photos/",
+            prefix: "images/my_photos/",
             images: ['img_v_1.jpg', 'img_v_4.jpg', 'img_v_3.jpg', 'img_v_2.jpg']
         }
         // Add more galleries as needed
