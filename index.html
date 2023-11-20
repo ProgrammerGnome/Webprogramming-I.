@@ -89,7 +89,7 @@
                     <div class="file-item">
                         <div class="file-header" onclick="toggleAccordion(1)">
                             <div class="file-icon">📁</div>
-                                Készülő félben lévő jegyzetek, dokumentumok
+                            Készülő félben lévő jegyzetek, dokumentumok
                         </div>
                         <div class="file-content">
                             Content of File 1
@@ -98,7 +98,7 @@
                     <div class="file-item">
                         <div class="file-header" onclick="toggleAccordion(2)">
                             <div class="file-icon">📁</div>
-                                Elkészült jegyzetek, dokumentumok
+                            Elkészült jegyzetek, dokumentumok
                         </div>
                         <div class="file-content">
                             Content of File 2
@@ -114,7 +114,7 @@
         <!-- Fő tartalom -->
         <div class="col-md-6">
             <div class="container-stack" id="szakmai_ismeretek">
-                <h1><br><br><br>Szakmai ismeretek:</h1>
+                <h1><br><br><br><br><br>Szakmai ismeretek:</h1>
                 <div class="mt-4">
                     <h3>My general TECH STACK:</h3>
                     <p>
@@ -250,19 +250,23 @@
 
             <div class="accordion accordion-flush" id="fobb_hobbi_projektek">
                 <h1 class="ujszin">Főbb hobbi projektek:</h1>
+                <h5 class="feherBetu">Hobbi projektjeim során igyekszem a való élet feladataira megoldást keresni.</h5>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                            Adminisztratív terheket csökkentő full-stack webalkalmazás (Java, Spring, JasperReport,
+                            Backbone.js)
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                          data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                        <div class="accordion-body"><p>Placeholder content for this accordion, which is intended to
                             demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.
+                            body.</p>
+                            <h6>Státusz: teljesen elkészült</h6>
+                            <h6>GitHub link:</h6>
                         </div>
                     </div>
                 </div>
@@ -271,14 +275,16 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                            PEditor: asztali szövegszerkesztő alkalmazás esszéírást segítő funkciókkal (C++, Qt)
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                          data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.
+                        <div class="accordion-body"><p>Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</p>
+                            <h6>Státusz: elkészült, de még lehetne hová fejleszteni</h6>
+                            <h6>GitHub link:</h6>
                         </div>
                     </div>
                 </div>
@@ -287,16 +293,52 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                            Accordion Item #3
+                            KöMaL S.141. probléma (lényegileg párhuzamosítás) megoldása C++ nyelven.
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                          data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.
+                        <div class="accordion-body"><p>Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</p>
+                            <h6>Státusz: megoldva</h6>
+                            <h6>GitHub link:</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                            Költségvetési alkalmazás (Java, SWING gui)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><p>Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</p>
+                            <h6>Státusz: teljesen elkészült, nincs fejlesztés alatt</h6>
+                            <h6>GitHub link:</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                            KöMaL S.20. probléma (koordináták lefedése minimális körrel) megoldása Python nyelven
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><p>Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</p>
+                            <h6>Státusz: megoldva</h6>
+                            <h6>GitHub link:</h6>
                         </div>
                     </div>
                 </div>
@@ -309,12 +351,24 @@
                     <h5 class="card-title">Projektek</h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <h6>InnoTeq Kft.</h6>
-                            <p>Leírás az első projekt referenciájáról.</p>
+                            <h6><b>InnoTeq Kft. - szoftverfejlesztés</b></h6>
+                            <p>2023.szeptember - jelenleg, megbízási szerződéssel</p>
+                            <p>Részvétel backend-es feladatokon egy erdőgazdálkodási kutatáshoz szükséges
+                                szoftver elkészítésénél. [Tech: Java, Spring, Postgres, Hibernate]</p>
+                            <a href="">elérhetőség</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h6><b>Rail Navigator Kft. - szoftverfejlesztés, szoftvertesztelés</b></h6>
+                            <p>2023.június - jelenleg</p>
+                            <p>Részvétel backend-es feladatokon egy vasúti teherszállítással kapcsolatos
+                                nagy komplexitású szoftver fejlesztésénél, valamint unit tesztek tervezésénél és
+                                implementálásuknál. [Tech: Java, Spring, Postgres, JUnit, Mockito]</p>
+                            <a href="">elérhetőség</a>
                         </li>
                         <li class="list-group-item">
                             <h6>Rail Navigator Kft.</h6>
-                            <p>Leírás a második projekt referenciájáról.</p>
+                            <p>KÖTELEZŐ SZAKMAI GYAKORLAT (2023 április - május) <br> [Tech: Java, Spring, Postgres,
+                                JUnit, Mockito, Vue.js, Backbone.js, JQuery]</p>
                         </li>
                         <!-- További projektek hozzáadása ugyanígy -->
                     </ul>
@@ -326,25 +380,32 @@
                 <h1>Oktatás:</h1>
                 <div class="card-body">
                     <div class="ujszin">
-                        <h5 class="card-title">Programtervező informatikus BSc</h5>
+                        <h5 class="card-title">Programtervező informatikus BSc <br> (2021.szeptember - jelenleg)</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Pécsi Tudományegyetem Természettudományi
                             Kar</h6>
                     </div>
                     <br><br><br>
-                    <a href="#" class="card-link ujszin">Az intézmény honlapja</a>
+                    <a href="https://www.ttk.pte.hu" class="card-link ujszin">Az intézmény honlapja</a>
                 </div>
             </div>
 
             <div class="yt-header" id="yt-header">
                 <br>
                 <h1>Egyéb felhasználható tartalom: </h1>
-                <p>abc</p>
+                <h4>YouTube-on a következő általam készített oktató jellegű videósorozatok érhetőek el:</h4>
                 <ul>
-                    <li>aasda
+                    <li>
+                        KöMaL és középiskolai matek: 5 db videó
                     </li>
-                    <li>gfsdg
+                    <li>
+                        Analízis I.: 1 db videó
+                    </li>
+                    <li>
+                        Analízis II.: 7 db videó
                     </li>
                 </ul>
+                <h5>Fontos megjegyezni, hogy a videók régebben készültek, és valamint a rendelkezésre álló
+                    technikai feltételek miatt a hangminőségük elég gyér.</h5>
                 <br>
             </div>
 
@@ -460,7 +521,13 @@
                         Videojátékos tartalmak
                     </div>
                     <div class="file-content_v2">
-                        Content of File 1
+                        <h5>Minecraft mapok:</h5>
+                        <p>Ezek creative módban épült mapok, melyek survival játékra lettek megalkotva,
+                            és tetszés szerint testre szabhatóak: </p>
+                        <a href="/Webprogramming-I.git/mcMaps/Jungeldorf_start_1-16-1.zip">JungelDorf (1.16.1)</a><br>
+                        <a href="/Webprogramming-I.git/mcMaps/M_Kohlstadt_1-12-2.zip">KohlStadt (1.12.2)</a><br>
+                        <a href="/Webprogramming-I.git/mcMaps/M_LopoPolis_1-14-2.zip">LopoPolis (1.14.2)</a><br>
+                        <a href="/Webprogramming-I.git/mcMaps/M_Túlélőfalu_1-19.zip">Frei&Turm (1.19)</a>
                     </div>
                 </div>
             </div>

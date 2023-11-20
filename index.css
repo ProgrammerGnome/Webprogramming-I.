@@ -136,6 +136,11 @@
     text-align: center;
 }
 
+.feherBetu {
+    color: white;
+    text-align: left;
+}
+
 .list-group-item {
     width: 75%;
 }
