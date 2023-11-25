@@ -1,7 +1,6 @@
 /**
  * Fájl választó
  */
-
 function toggleAccordion(fileNumber) {
     const fileContent = document.querySelector(`.file-item:nth-child(${fileNumber}) .file-content`);
     fileContent.style.display = (fileContent.style.display === 'block') ? 'none' : 'block';
@@ -15,10 +14,9 @@ function toggleAccordion_v2(fileNumber) {
 /**
  * Üdvözlő szöveg
  */
-
 document.addEventListener('DOMContentLoaded', function () {
     // Szövegek, amiket felváltva szeretnénk gépelni
-    const textsToType = ["PROGRAMMER GNOME", "BACKEND DEVELOPER", "BASED ARCH LINUX ENJOYER"];
+    const textsToType = ["PROGRAMMER GNOME", "BACKEND DEVELOPER", "AVERAGE ARCH LINUX USER"];
 
     // Időzítő, hogy megvárja a CSS animáció végezze el a gépelő hatást
     setTimeout(() => {
@@ -56,7 +54,9 @@ function startTyping(texts) {
     type();
 }
 
-
+/**
+ * Képmegjelenítés
+ */
 document.addEventListener('DOMContentLoaded', function () {
     const galleries = [
         {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prefix: "images/my_photos/",
             images: ['img_v_1.jpg', 'img_v_4.jpg', 'img_v_3.jpg', 'img_v_2.jpg']
         }
-        // Add more galleries as needed
+        // TODO: Több képgalériát is lehet hozzáadni.
     ];
 
     galleries.forEach(gallery => setupGallery(gallery));

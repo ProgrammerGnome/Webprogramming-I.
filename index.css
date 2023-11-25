@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700'); /* Általános stílusok */
 
-/* Navigációs cucc */
+/* Navigációs fejléc */
 .navbar {
-    /*
-    margin-left: 27%;
-    margin-right: 25%;
-    */
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -18,12 +14,17 @@
 
 .container-stack {
     background-image: url("images/oldMonitor.png");
-    width: 100%;
-    height: 25%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 700px;
+    width: 100%;
     text-align: center;
+}
+
+.mt-4 {
+    text-align: center;
+    vertical-align: top;
 }
 
 .container-docs {
@@ -34,73 +35,6 @@
 .yt-header {
     color: white;
 }
-
-/* Köszöntő animáció */
-
-/*p {*/
-/*    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);*/
-/*}*/
-
-/*.container-header {*/
-/*    font-family: Roboto, serif;*/
-/*    color: #e5e5e5;*/
-/*    !*font-size: 2.26rem;*!*/
-/*    font-size: 200%;*/
-/*    text-transform: uppercase;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    !*background-color: #333;*!*/
-/*    background-color: midnightblue;*/
-/*    width: 90%;*/
-/*    margin-left: auto;*/
-/*    margin-right: 5%;*/
-/*    height: 8vh;*/
-/*}*/
-
-/*.animation {*/
-/*    height: 75%;*/
-/*    overflow: hidden;*/
-/*    margin-left: 0;*/
-/*}*/
-
-/*.animation > div > div {*/
-/*    padding: 0.75rem 0.75rem;*/
-/*    height: 2.81rem;*/
-/*    margin-bottom: 2.81rem;*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.animation div:first-child {*/
-/*    animation: text-animation 10s infinite;*/
-/*}*/
-
-/*@keyframes text-animation {*/
-/*    0% {*/
-/*        margin-top: -1%;*/
-/*    }*/
-/*    10% {*/
-/*        margin-top: -1%;*/
-/*    }*/
-/*    20% {*/
-/*        margin-top: -5rem;*/
-/*    }*/
-/*    60% {*/
-/*        margin-top: -5rem;*/
-/*    }*/
-/*    70% {*/
-/*        margin-top: -10rem;*/
-/*    }*/
-/*    80% {*/
-/*        margin-top: -10rem;*/
-/*    }*/
-/*    90% {*/
-/*        margin-top: -1%;*/
-/*    }*/
-/*    100% {*/
-/*        margin-top: -1%;*/
-/*    }*/
-/*}*/
 
 #typing-container {
     font-family: 'Roboto', sans-serif;
@@ -113,12 +47,7 @@
     color: white;
 }
 
-
 .card {
-    /*
-    margin-left: 10%;
-    margin-right: 10%;
-    */
     background-image: url("images/keyboard.jpg");
     background-color: #5a6268;
     background-position: center;
@@ -146,7 +75,6 @@
 }
 
 .yt-container {
-    /*background-color: red;*/
     margin-left: 4%;
     margin-right: 4%;
     height: 1%;
@@ -234,8 +162,6 @@
 
 
 /* */
-
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, 30%);
